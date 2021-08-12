@@ -38,6 +38,7 @@ const Nav = styled.div`
   height: 70px;
   background: #090b13;
   padding: 0 36px;
+  overflow-x: hidden;
 `;
 const Logo = styled.img`
   width: 80px;

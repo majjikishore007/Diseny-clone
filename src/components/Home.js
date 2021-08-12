@@ -13,7 +13,7 @@ export default Home;
 const Container = styled.main`
   min-height: calc(100vh - 70px);
   padding: 0 calc(3.5vw + 5px);
-  /* width: 100%; */
+  overflow-x: hidden;
   position: relative;
   &:before {
     background: url("/images/home-background.png") center center / cover
