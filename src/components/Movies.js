@@ -9,11 +9,12 @@ const Movies = () => {
     <Container>
       <h4>Recomended for You</h4>
       <Content>
-        {movies.map((movie) => (
-          <Wrap key={movie.id}>
-            <img src={movie.cardImg} alt='' />
-          </Wrap>
-        ))}
+        {movies &&
+          movies.map((movie) => (
+            <Wrap key={movie.id}>
+              <img src={movie.cardImg} alt='' />
+            </Wrap>
+          ))}
       </Content>
     </Container>
   );

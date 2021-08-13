@@ -5,6 +5,7 @@ import Detail from "./components/Detail";
 import Login from "./components/Login";
 import { Provider } from "react-redux";
 import { store } from "./store";
+require("dotenv").config();
 function App() {
   return (
     <div>
