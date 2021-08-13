@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import ImageSlider from "./ImageSlider";
+import Movies from "./Movies";
 import Viewrs from "./Viewrs";
+
 const Home = () => {
   return (
     <Container>
       <ImageSlider></ImageSlider>
       <Viewrs></Viewrs>
+      <Movies></Movies>
     </Container>
   );
 };
