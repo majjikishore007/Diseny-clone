@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
+import db from "../firebase";
 import ImageSlider from "./ImageSlider";
 import Movies from "./Movies";
 import Viewrs from "./Viewrs";
+import movieReducer, { setMovies } from "../redux/movies/MovieSlice";
+import { useDispatch } from "react-redux";
 
 const Home = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    db.collection("movies").onSnapshot((snapshot) => {
+      let tempMovies = snapshot.docs.map((doc) => {
+        // console.log(doc.data());
+        return { id: doc.id, ...doc.data() };
+      });
+      dispatch(setMovies(tempMovies));
+      console.log(tempMovies);
+    });
+  }, []);
   return (
     <Container>
       <ImageSlider></ImageSlider>

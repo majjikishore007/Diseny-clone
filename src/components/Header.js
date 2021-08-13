@@ -27,11 +27,18 @@ const Header = () => {
           <span>SERIES</span>
         </a>
       </NavMenu>
+      <UserImage src='https://avatars.githubusercontent.com/u/53621314?v=4'></UserImage>
     </Nav>
   );
 };
 
 export default Header;
+const UserImage = styled.img`
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+`;
 const Nav = styled.div`
   display: flex;
   align-items: center;
