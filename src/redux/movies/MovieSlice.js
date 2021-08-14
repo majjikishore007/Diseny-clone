@@ -4,8 +4,10 @@ const initialState = {
   movies: [],
 };
 const moviesSlice = createSlice({
+  //actions
   name: "movies",
   initialState,
+  // reducers
   reducers: {
     setMovies: (state, action) => {
       state.movies = action.payload;
