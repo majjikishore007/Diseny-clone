@@ -45,7 +45,7 @@
 - fork the repository and clone to your local Set Up
 - make sure that you  have `node ` installed
 - run this command to install the node modules  `npm install` 
-- now you can see the project in your browser by executing this command `npm start`
+- now you can see the project runing in your browser by executing this command `npm start`
 - That's  it now you can have fun exploring this project
 
 
