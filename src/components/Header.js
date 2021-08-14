@@ -36,7 +36,12 @@ const Header = () => {
   };
   return (
     <Nav>
-      <Logo src='/images/logo.svg'></Logo>
+      <Logo
+        onClick={() => {
+          history.push("/");
+        }}
+        src='/images/logo.svg'
+      ></Logo>
       {!userName ? (
         <LoginContainer>
           <Login onClick={signIn}>LOGIN</Login>
@@ -110,6 +115,7 @@ const Nav = styled.div`
 `;
 const Logo = styled.img`
   width: 80px;
+  cursor: pointer;
 `;
 const NavMenu = styled.div`
   display: flex;
